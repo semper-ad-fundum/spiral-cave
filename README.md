@@ -37,7 +37,7 @@ Then select `Create` menu and use the following options:
 
 NASA DEM download:
  
-1.  At https://earthexplorer.usgs.gov` in `Data Sets` tab search for and select `NASADEM_HGT`
+1.  At https://earthexplorer.usgs.gov in `Data Sets` tab search for and select `NASADEM_HGT`
 2.  In the `Search Criteria` tab go to `Polygon` tab and click `Use Map`
 3.  Mark the Montenegro area on the map
 4.  Search displays only one result,  `NASADEM_HGT_N42E019.zip` for download
