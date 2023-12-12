@@ -1,0 +1,23 @@
+# teoretycznie Therion może importować pliki .3d Survexa bezpośrednio
+# ale to nie działa z powodu ciągłych błędów o mieszaniu systemów współrzednych
+
+import surveys/spi459.3d -surveys create -cs UTM34
+import surveys/1.survex_2019.3d -surveys create -cs UTM34
+
+# 2016-2017 import from spi456.3d
+survey survey -entrance 0
+centerline
+cs UTM34
+fix 0 380713 4711095 1828
+endcenterline
+endsurvey
+
+# 2019 import from 1.survex_2019.3d
+survey spiral_25
+centerline
+cs UTM34
+endcenterline
+endsurvey
+
+equate 0@spiral_25 74@survey
+# ten plik nie jest więc używany, może w przyszłości

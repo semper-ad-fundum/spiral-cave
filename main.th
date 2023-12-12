@@ -1,0 +1,49 @@
+encoding  utf-8
+input "surveys/2016.th"
+#input "surveys/2018.th"
+#input "surveys/2018_1.th"
+input "surveys/2018_2.th"
+#input "surveys/2019.th"
+
+
+#equate 78@2018 78@2016
+#equate 84@2018 111@2019
+
+# pomiary 2018_1 mają niską dokładność i mocno różnią się od innych
+#equate 3@2018_1 85@2018
+
+equate 0@spiral_25 78@2016
+
+#equate 111@2019 78@2016
+
+# profil powierzchni dla pliku LOX
+input "surveys/nasdem.th"
+
+input spirala.th2
+
+map map1
+  scrap1
+  break
+  scrap2
+  break
+  scrap3
+  break
+  scrap33
+  break
+  scrap4
+  break
+  scrap5
+  break
+  scrap6
+  break
+  scrap7
+  break
+  scrap8
+  break
+  scrap88
+  break
+  scrap9
+  break
+  scrap10
+endmap
+
