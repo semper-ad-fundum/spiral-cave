@@ -1,7 +1,19 @@
 # Spiral cave
 
 ## Morphing
+The surveys came with partial plans drawn between 2016 and 2019, partially by hand. At the same time parts of the surveys didn't have
+LRUD data. Therefore Therion morphing (sketch warping) was used to draw the new plan over the bitmap of the hand-drawn plan, embedded
+in Therion canvas.
 
+1. Create a new empty canvas in the plan view
+2. At the bottom of the menu in **Background images** add the original hand-drawn scan
+3. Create a new scrap
+4. In the scrap menu section **Background sketches** click the background sketch you just added
+5. Add named survey stations where they are located on the hand-drawn scan
+6. Run Therion to generate the XVI file
+
+The generated XVI file will now have the rescaled and morphed bitmap embedded. You can then abandon the original sketches, and create
+a new one, this time using the morphed XVI as Background sketch and draw over it.
 
 ## Terrain view
 Terrain view is possible in both Aven and Loch models. `NASADEM_HGT_N42E019.zip` was downloaded from [NASA DEM](https://urs.earthdata.nasa.gov/home), placed in `~/.terraintool` and unpacked there.
