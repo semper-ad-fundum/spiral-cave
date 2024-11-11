@@ -4,7 +4,8 @@ language en
 source "main.th"
 
 #sketch-warp point
-select map1
+select mainMap@main
+
 #export map -layout morph -format svg -o morphed.svg
 #export map -layout morph -format pdf -o morphed.pdf
 #export map -layout morph -format xvi -o morphed.xvi
@@ -16,14 +17,15 @@ export map -o output/Spirala.xvi
 export map -projection extended -o output/Spirala_ext.xvi
 
 layout normal
-     #scale 1 100
+     scale 1 300
      doc-author "Paweł Krawczyk"
-     doc-title "Spiral Cave"
+     doc-title "Spiral Cave, Samotorit, Montenegro"
      statistics explo all
      statistics topo all
      statistics carto all
      statistics copyright all
-     #color map-fg 80
+     color map-fg 80
+     #color map-bg 80
      color map-fg altitude
      legend on
      # for debugging
@@ -49,4 +51,7 @@ layout morph
 endlayout
 
 export map -format pdf -layout normal -o output/Spirala.pdf
-#export map -format pdf -layout normal -projection extended -o output/Spitala_ext.pdf
+
+select map_ext
+
+export map -format pdf  -layout normal -projection extended -o output/Spitala_ext.pdf
