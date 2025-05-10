@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -228.0 -132.0 4831.139999999999 6733.974999999999
+##XTHERION## xth_me_area_adjust -228.0 1852.0 4831.139999999999 6733.974999999999
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {451.17999999999984 1 1.0} {4794.96 0@2016.main} output/Spirala.xvi 0 {}
 
@@ -1560,6 +1560,7 @@ endline
 line pit -reverse on
   1076.5 4572.25
   1076.5 4572.25 1079.5 4559.75 1075.5 4556.75
+  smooth off
 endline
 
 line pit
@@ -1955,23 +1956,19 @@ line slope
   l-size 20.0
 endline
 
-area water
-  l292-1278-4930
-endarea
-
 line pit -reverse on
   1199.0 4858.0
   1166.0 4893.0
 endline
 
-line pit -id l292-1278-4930 -close on -reverse on
+area water
+  l307-1213-4939
+endarea
+
+line border -id l307-1213-4939 -close on -reverse on
   1203.0 4883.0
-  1178.0 4898.0
-  1179.5 4925.5
-  1201.5 4942.0
-  1228.0 4927.5
-  1233.5 4903.0
-  1203.0 4883.0
+  1164.48 4882.23 1169.69 4940.69 1201.5 4942.0
+  1236.28 4943.43 1251.71 4883.97 1203.0 4883.0
 endline
 
 endscrap
@@ -2017,6 +2014,8 @@ line pit -reverse on
 endline
 
 point 2319.0 5508.5 label -text "-426 m"
+
+point 2307.0 5703.0 label -text "Stary biwak"
 
 point 2323.0 5654.5 camp
 

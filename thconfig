@@ -12,6 +12,7 @@ select mainMap@main
 
 export model -o output/Spirala.lox
 export model -format survex -o output/Spirala.3d
+export model -format survex -o output/Spirala.vrml
 export map -o output/Spirala.kml
 export map -o output/Spirala.xvi
 export map -projection extended -o output/Spirala_ext.xvi
@@ -26,8 +27,10 @@ layout normal
      statistics copyright all
      color map-fg 80
      #color map-bg 80
-     color map-fg altitude
+     #color map-fg altitude
      legend on
+     grid bottom
+     grid-size 50 50 50 m
      # for debugging
      #symbol-show point cave-station
      #symbol-show group cave-centerline
@@ -55,3 +58,4 @@ export map -format pdf -layout normal -o output/Spirala.pdf
 select map_ext
 
 export map -format pdf  -layout normal -projection extended -o output/Spitala_ext.pdf
+export map -format svg  -layout normal -projection extended -o output/Spitala_ext.svg
